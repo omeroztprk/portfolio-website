@@ -2,26 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omer Oztoprak Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-    <meta name="description" content="Portfolio of Ömer Öztoprak — projects, skills, and contact." />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="description"
+        content="Portfolio of Ömer Öztoprak — Full Stack Developer specializing in modern web applications">
 </head>
 
 <body>
 
-    <header class="site-header" role="banner">
+    <!-- Header -->
+    <header class="header" role="banner">
         <div class="container header-container">
-            <a href="#home" class="app-logo app-logo--sm" aria-label="Go to home">
-                <img src="./images/logo.png" alt="Ömer Öztoprak Logo" />
+            <a href="#home" class="logo logo-sm" aria-label="Ömer Öztoprak - Home">
+                <img src="images/logo.png" alt="Logo">
             </a>
 
-            <nav id="site-nav" class="site-nav" aria-label="Primary">
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link nav-link-active" aria-current="page">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#skills" class="nav-link">Skills</a></li>
                     <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -29,141 +35,144 @@
                 </ul>
             </nav>
 
-            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-controls="site-nav"
-                aria-expanded="false" type="button">
-                <span class="hamburger" aria-hidden="true"></span>
+            <button class="menu-toggle" type="button" aria-label="Toggle menu" aria-controls="site-nav"
+                aria-expanded="false">
+                <span class="menu-toggle-bar"></span>
             </button>
         </div>
     </header>
 
-    <div class="mobile-menu-overlay" hidden></div>
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" hidden aria-hidden="true"></div>
 
-    <main id="main-content" tabindex="-1">
-        <!-- =================== HOME =================== -->
-        <section id="home" aria-label="Home">
+    <!-- Main Content -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section" aria-label="Home">
             <div class="container">
-                <h1 class="hero-title">Welcome to My Portfolio
-                    <span class="highlight">Ömer Öztoprak</span>
+                <h1 class="hero-title">
+                    Welcome to My Portfolio
+                    <span class="hero-highlight">Ömer Öztoprak</span>
                 </h1>
 
-                <div class="profession-wrapper" aria-live="polite">
-                    <span class="profession-prefix">I'm a </span>
-                    <span class="profession-text" id="profession-text"></span>
-                    <span class="cursor" aria-hidden="true">|</span>
+                <div class="hero-typewriter" aria-live="polite">
+                    <span class="hero-typewriter-prefix">I'm a </span>
+                    <span class="hero-typewriter-text" id="profession-text"></span>
+                    <span class="hero-cursor" aria-hidden="true"></span>
                 </div>
 
                 <p class="hero-description">
-                    Explore my projects and get to know me better.
+                    Explore my projects and get inspired.
                 </p>
 
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn--primary btn--lg">View Projects</a>
-                    <a href="#contact" class="btn btn--secondary btn--lg">Contact Me</a>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary btn-xl">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary btn-xl">Contact Me</a>
                 </div>
+
                 <a href="#about" class="scroll-indicator" aria-label="Scroll to next section">
-                    <span class="si-mouse" aria-hidden="true">
-                        <span class="si-wheel"></span>
+                    <span class="scroll-indicator-mouse">
+                        <span class="scroll-indicator-wheel"></span>
                     </span>
-                    <span class="si-chev" aria-hidden="true"></span>
+                    <span class="scroll-indicator-arrow"></span>
                 </a>
             </div>
         </section>
 
-        <!-- =================== ABOUT =================== -->
-        <section id="about" class="about-section" aria-label="About Me">
+        <!-- About Section -->
+        <section id="about" class="section" aria-label="About">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores deleniti placeat odit
-                    iusto quisquam aliquam cum enim earum voluptatum culpa minima reprehenderit dolore natus sapiente
-                    nihil quibusdam quidem maxime, labore consectetur necessitatibus alias sit quaerat nemo? Labore
-                    excepturi consequatur, distinctio eveniet aut, ea sint accusantium molestias ipsa illo illum
-                    recusandae ab asperiores perspiciatis deleniti maiores praesentium fuga vitae sunt sapiente nostrum
-                    reiciendis? Minima quas harum, esse sed deleniti aperiam neque sequi quibusdam non ad vero quidem a
-                    libero perferendis accusamus maiores eveniet qui praesentium, voluptatum repellat magnam odit
-                    consequuntur illo. Distinctio voluptates officiis alias soluta voluptatem laudantium ipsa eius!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores deleniti placeat odit
-                    iusto quisquam aliquam cum enim earum voluptatum culpa minima reprehenderit dolore natus sapiente
-                    nihil quibusdam quidem maxime, labore consectetur necessitatibus alias sit quaerat nemo? Labore
-                    excepturi consequatur, distinctio eveniet aut, ea sint accusantium molestias ipsa illo illum
-                    recusandae ab asperiores perspiciatis deleniti maiores praesentium fuga vitae sunt sapiente nostrum
-                    reiciendis? Minima quas harum, esse sed deleniti aperiam neque sequi quibusdam non ad vero quidem a
-                    libero perferendis accusamus maiores eveniet qui praesentium, voluptatum repellat magnam odit
-                    consequuntur illo. Distinctio voluptates officiis alias soluta voluptatem laudantium ipsa eius!</p>
             </div>
         </section>
 
-        <!-- =================== SKILLS =================== -->
-        <section id="skills" class="skills-section" aria-label="My Skills">
+        <!-- Skills Section -->
+        <section id="skills" class="section" aria-label="Skills">
             <div class="container">
                 <h2 class="section-title">My Skills</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores deleniti placeat odit
-                    iusto quisquam aliquam cum enim earum voluptatum culpa minima reprehenderit dolore natus sapiente
-                    nihil quibusdam quidem maxime, labore consectetur necessitatibus alias sit quaerat nemo? Labore
-                    excepturi consequatur, distinctio eveniet aut, ea sint accusantium molestias ipsa illo illum
-                    recusandae ab asperiores perspiciatis deleniti maiores praesentium fuga vitae sunt sapiente nostrum
-                    reiciendis? Minima quas harum, esse sed deleniti aperiam neque sequi quibusdam non ad vero quidem a
-                    libero perferendis accusamus maiores eveniet qui praesentium, voluptatum repellat magnam odit
-                    consequuntur illo. Distinctio voluptates officiis alias soluta voluptatem laudantium ipsa eius!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores deleniti placeat odit
-                    iusto quisquam aliquam cum enim earum voluptatum culpa minima reprehenderit dolore natus sapiente
-                    nihil quibusdam quidem maxime, labore consectetur necessitatibus alias sit quaerat nemo? Labore
-                    excepturi consequatur, distinctio eveniet aut, ea sint accusantium molestias ipsa illo illum
-                    recusandae ab asperiores perspiciatis deleniti maiores praesentium fuga vitae sunt sapiente nostrum
-                    reiciendis? Minima quas harum, esse sed deleniti aperiam neque sequi quibusdam non ad vero quidem a
-                    libero perferendis accusamus maiores eveniet qui praesentium, voluptatum repellat magnam odit
-                    consequuntur illo. Distinctio voluptates officiis alias soluta voluptatem laudantium ipsa eius!</p>
             </div>
         </section>
 
-        <!-- =================== PROJECTS =================== -->
-        <section id="projects" class="projects-section" aria-label="My Projects">
+        <!-- Projects Section -->
+        <section id="projects" class="section" aria-label="Projects">
             <div class="container">
                 <h2 class="section-title">My Projects</h2>
 
                 <!-- Filters -->
-                <div class="projects-toolbar" role="toolbar" aria-label="Project filters">
-                    <div id="project-filters" class="filter-group"></div>
+                <div class="projects-toolbar" role="toolbar" aria-label="Filter projects">
+                    <div id="project-filters" class="projects-filters"></div>
                 </div>
 
-                <!-- Grid -->
+                <!-- Project Grid -->
                 <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
 
                 <!-- Pagination -->
-                <nav id="projects-pagination" class="projects-pagination" aria-label="Projects pagination"></nav>
+                <nav id="projects-pagination" class="pagination" aria-label="Projects pagination"></nav>
             </div>
         </section>
 
-
-        <!-- =================== CONTACT =================== -->
-        <section id="contact" class="contact-section" aria-label="Contact Me">
+        <!-- Contact Section -->
+        <section id="contact" class="section" aria-label="Contact">
             <div class="container">
                 <h2 class="section-title">Contact Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores deleniti placeat odit
-                    iusto quisquam aliquam cum enim earum voluptatum culpa minima reprehenderit dolore natus sapiente
-                    nihil quibusdam quidem maxime, labore consectetur necessitatibus alias sit quaerat nemo? Labore
-                    excepturi consequatur, distinctio eveniet aut, ea sint accusantium molestias ipsa illo illum
-                    recusandae ab asperiores perspiciatis deleniti maiores praesentium fuga vitae sunt sapiente nostrum
-                    reiciendis? Minima quas harum, esse sed deleniti aperiam neque sequi quibusdam non ad vero quidem a
-                    libero perferendis accusamus maiores eveniet qui praesentium, voluptatum repellat magnam odit
-                    consequuntur illo. Distinctio voluptates officiis alias soluta voluptatem laudantium ipsa eius!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores deleniti placeat odit
-                    iusto quisquam aliquam cum enim earum voluptatum culpa minima reprehenderit dolore natus sapiente
-                    nihil quibusdam quidem maxime, labore consectetur necessitatibus alias sit quaerat nemo? Labore
-                    excepturi consequatur, distinctio eveniet aut, ea sint accusantium molestias ipsa illo illum
-                    recusandae ab asperiores perspiciatis deleniti maiores praesentium fuga vitae sunt sapiente nostrum
-                    reiciendis? Minima quas harum, esse sed deleniti aperiam neque sequi quibusdam non ad vero quidem a
-                    libero perferendis accusamus maiores eveniet qui praesentium, voluptatum repellat magnam odit
-                    consequuntur illo. Distinctio voluptates officiis alias soluta voluptatem laudantium ipsa eius!</p>
             </div>
         </section>
     </main>
 
-    <footer class="site-footer" role="contentinfo">
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+        <div class="modal-overlay"></div>
+        <div class="modal-dialog">
+            <button class="modal-close" type="button" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <!-- Gallery Section -->
+                <div class="modal-gallery">
+                    <div class="modal-gallery-main">
+                        <img src="" alt="">
+                        <button class="modal-gallery-nav modal-gallery-nav-prev" type="button"
+                            aria-label="Previous image">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="modal-gallery-nav modal-gallery-nav-next" type="button" aria-label="Next image">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="modal-gallery-thumbs" role="tablist"></div>
+                </div>
+
+                <!-- Details Section -->
+                <div class="modal-details">
+                    <div class="modal-header">
+                        <h2 id="modal-title" class="modal-title"></h2>
+                        <div class="modal-tags"></div>
+                    </div>
+
+                    <div class="modal-description"></div>
+
+                    <div class="modal-actions">
+                        <a class="btn btn-primary btn-lg" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-up-right-from-square"></i>
+                            Live Demo
+                        </a>
+                        <a class="btn btn-secondary btn-lg" href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <div class="footer-container">
+            <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#home" class="app-logo app-logo--sm" aria-label="Go to home">
-                        <img src="./images/logo.png" alt="Footer Logo" />
+                    <a href="#home" class="logo logo-sm" aria-label="Back to top">
+                        <img src="images/logo.png" alt="Footer Logo">
                     </a>
                     <p class="footer-tagline">
                         Creating modern web experiences with clean and efficient code.
@@ -173,25 +182,29 @@
                 <div class="footer-col">
                     <h3 class="footer-heading">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#skills" class="footer-link">Skills</a></li>
+                        <li><a href="#projects" class="footer-link">Projects</a></li>
+                        <li><a href="#contact" class="footer-link">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-col">
                     <h3 class="footer-heading">Connect</h3>
                     <div class="footer-social">
-                        <a href="#" aria-label="GitHub" class="icon icon--github"><i
-                                class="fab fa-github"></i></a>
-                        <a href="#" aria-label="LinkedIn" class="icon icon--linkedin"><i
-                                class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="Twitter / X" class="icon icon--x-twitter"><i
-                                class="fab fa-x-twitter"></i></a>
-                        <a href="#" aria-label="Instagram" class="icon icon--instagram"><i
-                                class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/omeroztprk" class="icon icon-github" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="icon icon-linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="icon icon-x-twitter" aria-label="X (Twitter)">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="icon icon-instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>
