@@ -141,11 +141,42 @@
         gap: var(--space-6);
     }
 
+    .skills-card-header {
+        margin-bottom: var(--space-6);
+    }
+
+    .skills-card-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: var(--text-base);
+    }
+
+    .skill-item {
+        font-size: 2rem;
+        min-height: 3.5rem;
+        min-width: 3.5rem;
+    }
 }
 
 @media (max-width: 639px) {
     .skills-content {
         grid-template-columns: 1fr;
+        gap: var(--space-6);
     }
 
+    .skills-card-title {
+        font-size: var(--text-base);
+    }
+
+    .skills-card-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: var(--text-sm);
+    }
+
+    .skill-item {
+        font-size: 1.75rem;
+        min-height: 3rem;
+        min-width: 3rem;
+    }
 }
