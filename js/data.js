@@ -20,11 +20,11 @@ window.HOME_DATA = {
 // ABOUT SECTION DATA
 // ===========================================
 window.ABOUT_DATA = {
-  profileImage: "assets/images/profile.jpg",
+  profileImage: "assets/images/projects/defaults/profile-default.png",
   description: [
-    "Hello, I'm Ömer. I am a software developer who graduated from Beykent University Software Engineering department. During my education, I didn't limit myself to just theoretical knowledge, but developed many independent projects to improve both my technical and practical skills.",
-    "Focusing on both frontend and backend technologies in software development, I have conducted in-depth studies on the path to becoming a fully equipped full-stack developer. I specialize in modern JavaScript frameworks, cloud technologies, and creating scalable applications.",
-    "I am always eager to learn new technologies and improve myself. I am excited about the opportunity to contribute to innovative projects and collaborate with dynamic teams in the ever-evolving tech industry."
+    "Hello, my name is Ömer. I am a software developer and a graduate of the Software Engineering program at Beykent University. Throughout my academic journey, I did not limit myself to theoretical knowledge alone; instead, I developed numerous independent projects that enhanced both my technical and practical skills. During this process, I particularly focused on AI-powered full-stack projects, conducting in-depth studies that allowed me to graduate with a strong foundation.",
+    "Alongside my education, I completed an internship where I gained valuable experience in developing sustainable and scalable applications. I actively contributed to every stage of project lifecycles, strengthening not only my technical expertise but also my communication skills, while gaining hands-on experience in solving real-world challenges within a professional work environment.",
+    "My career goal is to become an AI Engineer specializing in developing AI-driven solutions and full-stack projects. To achieve this, I am committed to continuously improving myself by keeping up with innovative technologies and contributing to the industry through projects that create tangible value."
   ],
   resumeLink: "assets/resume.pdf"
 };
@@ -121,8 +121,8 @@ window.CONTACT_DATA = {
       title: "Email",
       icon: "fas fa-envelope",
       type: "link",
-      value: "omer.oztoprak@example.com",
-      href: "mailto:omer.oztoprak@example.com"
+      value: "your.email@example.com",
+      href: "mailto:your.email@example.com"
     },
     {
       id: "location",

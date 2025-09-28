@@ -4,9 +4,9 @@
 
 A sleek and professional personal portfolio website designed to showcase career achievements, development skills, project work, and contact information. Built with semantic HTML5, custom CSS3, and interactive JavaScript, using only core frontend technologies without external frameworks.
 
-## Live Demo
+## Live Site
 
-[View Live Demo](https://omeroztprk.github.io)
+[View Portfolio Website](https://omeroztprk.github.io)
 
 ## Features
 
@@ -50,9 +50,9 @@ A sleek and professional personal portfolio website designed to showcase career 
       </a><br/><sub>Projects</sub>
     </td>
     <td align="center">
-      <a href="assets/images/screenshots/modal.png">
-        <img src="assets/images/screenshots/modal.png" alt="Modal" width="260">
-      </a><br/><sub>Modal</sub>
+      <a href="assets/images/screenshots/project-details.png">
+        <img src="assets/images/screenshots/project-details.png" alt="Project Details" width="260">
+      </a><br/><sub>Project Details</sub>
     </td>
     <td align="center">
       <a href="assets/images/screenshots/contact.png">
